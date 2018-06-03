@@ -21,6 +21,13 @@
             <div></div>
             <input type="checkbox" ng-model="ctrl.checked3"></input>
             <p ng-hide="ctrl.checked3">Some content</p>
+
+            <div ng-repeat="i in ctrl.myList">
+                <p>Name: {{i.name}}</p>
+                <p>Age: {{i.age}}</p>
+                <hr/>
+
+            </div>
         </div>
 
     </body>
