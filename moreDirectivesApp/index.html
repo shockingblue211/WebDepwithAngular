@@ -1,0 +1,28 @@
+<html ng-app="moreDirectivesApp">
+
+    <head>
+        <title>More Directives App</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+
+    <body>
+        <h1>More Directives App</h1>
+
+        <div ng-controller="MoreDirectivesCtrl as ctrl">
+            <!-- check on browser dev tool: -->
+            <!-- ng-if take the element away when inspect from dev tool -->
+            <input type="checkbox" ng-model="ctrl.checked"></input>
+            <p ng-if="ctrl.checked">Some content</p>
+            <!-- ng-show and ng-hide still leave the element when inspected, just not shown. -->
+            <div></div>
+            <input type="checkbox" ng-model="ctrl.checked2"></input>
+            <p ng-show="ctrl.checked2">Some content</p>
+            <div></div>
+            <input type="checkbox" ng-model="ctrl.checked3"></input>
+            <p ng-hide="ctrl.checked3">Some content</p>
+        </div>
+
+    </body>
+
+</html>
