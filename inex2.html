@@ -7,8 +7,10 @@
 
     <body>
         <div ng-controller="ClockCtrl">
+            Please enter your name: <input ng-model="userName" type="text"></input>
             <h1>Clock App</h1>
             <p>The current time is: {{curTime}}</p>
+            <p>Your name is: {{userName}}</p>
             <button ng-click="updateTime()">Update Time</button>
 
         </div>
