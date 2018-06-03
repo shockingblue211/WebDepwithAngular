@@ -22,7 +22,16 @@
             <input type="checkbox" ng-model="ctrl.checked3"></input>
             <p ng-hide="ctrl.checked3">Some content</p>
 
+            <!-- each object is create and co-exists in memory, -->
+            <!-- by Angular assigning a new scope call "ng-scope" for each object. -->
+            <!-- this is different from java for loop. -->
             <div ng-repeat="i in ctrl.myList">
+                <p>Element: {{$index + 1}}</p>
+                <p>If is first: {{$first}} </p>
+                <p>If is middle: {{$middle}} </p>
+                <p>If is last: {{$last}} </p>
+                <p>If is odd: {{!$odd}} </p>
+                <p>If is even: {{!$even}} </p>
                 <p>Name: {{i.name}}</p>
                 <p>Age: {{i.age}}</p>
                 <hr/>

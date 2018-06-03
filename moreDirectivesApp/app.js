@@ -5,6 +5,7 @@ angular.module("moreDirectivesApp", [])
 function MoreDirectivesCtrl(){
     this.myList = [
         {'name': "Bob", "age":322},
-        {"name": "Marly", 'age': 34, 'livesIn':"Jamaca"}
+        {"name": "Marly", 'age': 34, 'livesIn':"Jamaca"},
+        {'name': "David Bowie", "age":322}
     ];
 }
